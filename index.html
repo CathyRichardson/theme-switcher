@@ -1,25 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Theme Changing Counter</title>
-    <link rel="stylesheet" href="./index.css" />
-    <link rel="stylesheet" href="./themes.css" />
-  </head>
-  <body>
-    <header>
-      <p>Choose a theme:</p>
 
-      <button>Facebook</button> <button>DevMountain</button>
-      <button>Twitter</button> <button>Default</button>
-    </header>
-    <main>
-      <h1>0</h1>
-      <h2>Clicks</h2>
-      <section>
-        <button>-</button> <button>Reset</button> <button>+</button>
-      </section>
-    </main>
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Theme Changing Counter</title>
+  <link rel="stylesheet" href="./index.css" />
+  <link rel="stylesheet" href="./themes.css" />
+</head>
+
+<body>
+  <header>
+    <!-- <form> -->
+      <!-- <input type="text" id="myInput"></input> -->
+      <!-- <button class="submitBtn">Submit</button> -->
+      <p id="instructions"></p>
+      <button class="facebookbutton header-button" onclick="switchTheme('facebook')">Facebook</button> 
+      <button onclick="switchTheme('devmountain')">DevMountain</button>
+      <button onclick="switchTheme('twitter')">Twitter</button> 
+      <button onclick="switchTheme('default')">Default</button>
+    <!-- </form> -->
+  </header>
+
+  </header>
+  <main>
+    <h1 class="count">0</h1>
+    <h2>Clicks</h2>
+    <section>
+      <button id="decrement-button">-</button> 
+      <button id="reset-button">Reset</button> 
+      <button id="increment-button">+</button>
+    </section>
+  </main>
+  <script src="./index.js">    </script>
+</body>
+
 </html>
